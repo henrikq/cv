@@ -1,23 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% NOTE: If you find that it says                                     %%
-%%                                                                    %%
-%%                           1 of ??                                  %%
-%%                                                                    %%
-%% at the bottom of your first page, this means that the AUX file     %%
-%% was not available when you ran LaTeX on this source. Simply RERUN  %% 
-%% LaTeX to get the ``??'' replaced with the number of the last page  %% 
-%% of the document. The AUX file will be generated on the first run   %%
-%% of LaTeX and used on the second run to fill in all of the          %%
-%% references.                                                        %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Don't like 10pt? Try 11pt or 12pt
 \documentclass[11pt]{article}
 
 % This is a helpful package that puts math inside length specifications
@@ -51,20 +31,20 @@
 %
 
 %% Use these lines for letter-sized paper
-\usepackage[paper=letterpaper,
-            %includefoot, % Uncomment to put page number above margin
-            marginparwidth=1in,     % Length of section titles
-            marginparsep=.05in,       % Space between titles and text
-            margin=0.5in,               % 1 inch margins
-            includemp]{geometry}
+%% \usepackage[paper=letterpaper,
+%%             %includefoot, % Uncomment to put page number above margin
+%%             marginparwidth=1in,     % Length of section titles
+%%             marginparsep=.05in,       % Space between titles and text
+%%             margin=0.5in,               % 1 inch margins
+%%             includemp]{geometry}
 
 %% Use these lines for A4-sized paper
-%\usepackage[paper=a4paper,
-%            %includefoot, % Uncomment to put page number above margin
-%            marginparwidth=30.5mm,    % Length of section titles
-%            marginparsep=1.5mm,       % Space between titles and text
-%            margin=25mm,              % 25mm margins
-%            includemp]{geometry}
+\usepackage[paper=a4paper,
+           %includefoot, % Uncomment to put page number above margin
+           marginparwidth=30.5mm,    % Length of section titles
+           marginparsep=1.5mm,       % Space between titles and text
+           margin=20mm,              % 25mm margins
+           includemp]{geometry}
 
 %% More layout: Get rid of indenting throughout entire document
 \setlength{\parindent}{0in}
@@ -223,12 +203,12 @@ Norway
 Graduating PhD Student, with experience with:
 \begin{multicols}{2}
 \begin{itemize}
-\item Data Analysis;
-\item C/C++ Development;
-\item Algororithm Testing and Evaluating;
-\item Large Scale Computing;
-\item System Commisioning Maintanence.
-\item[] \
+\item Data Analysis
+\item C/C++ Development
+\item {\small Algororithm Testing and Evaluating}
+\item Large Scale Computing (GRID)
+\item {\small System Commisioning Maintanence.}
+\item Automation
 \end{itemize}
 \end{multicols}
 
@@ -254,8 +234,9 @@ Oslo, Norway
 
 \item[] \textbf{Ph.D.}, 
   \href{http://www.mn.uio.no/fysikk/english/}
-       {Department of Physics}, expected graduation date: April 2014
+       {Department of Physics}, expected graduation date: 2015
         \begin{innerlist}
+          \footnotesize
         \item Thesis Topic: ``Production of neutral particles in ALICE using PHOS, The Photon Spectrometer.''
         %% \item Advisor: 
         %%       \href{http://www.mn.uio.no/fysikk/english/people/aca/trine/}
@@ -278,6 +259,7 @@ Bergen, Norway
   \href{http://www.uib.no/ift/en}
        {Department of Physics and Technology}, 2009
         \begin{innerlist}
+          \footnotesize
         \item Thesis Topic: ``Calibration of ALICE Photon Spectrometer 
           using $\pi^0\rightarrow\gamma\gamma$ decay.''
         %% \item Advisor: 
@@ -292,6 +274,7 @@ Bergen, Norway
         \href{http://www.uib.no/matnat/en}
              {Faculty of Mathematics and Natural Sciences}, 2007
         \begin{innerlist}
+          \footnotesize
         \item Specialization (Major/minor) within Particle and Nuclear Physics, 
           computational mathematics, and programming.
         \end{innerlist}
@@ -307,6 +290,7 @@ Oslo, Norway \& Geneva, Switzerland
 \item[] \textit{Researcher, PhD Candidate}
   \hfill April 2010 to Present
   \begin{innerlist}
+    \footnotesize
   \item Main thesis work is on the analysis of data produced by ALICE.
     \begin{innerlist}
     \item Analysis is done through the development and use of the 
@@ -340,6 +324,7 @@ Geneva, Switzerland \& Bergen, Norway
 \item[] \textit{Research Assistant}
   \hfill Oct 2010 to April 2010
   \begin{innerlist}
+    \footnotesize
   %% \item Continued service work done during master thesis; 
   %%   commissioning of PHOS, The Photon Spectrometer.
   \item Developed software for the numerical calculation and imaging of 
@@ -349,6 +334,7 @@ Geneva, Switzerland \& Bergen, Norway
 \item[] \textit{Teaching Assistant}
   \hfill Fall 07'
   \begin{innerlist}
+    \footnotesize
   \item \href{http://www.uib.no/course/STAT101#course}{Elementary Statistics}
   \item Held lab sessions introducing students to the use of S-Plus statistics 
     software, and graded assignments.
@@ -363,6 +349,7 @@ Bergen, Norway
 \item[] \textit{Science Host}
   \hfill Fall 07' to Fall 08'
   \begin{innerlist}
+    \footnotesize
   %% \item Hosted visits, requiring good interpersonal skills and the ability to 
   %%   explain the science behind display pieces to the general public.
   \item Host and Content Development,
@@ -403,8 +390,9 @@ Bergen, Norway
 %%               , some experience in Technical Writing (Documantation)
 %% \end{tabular*}
 
-\section{Language:}
+\section{Language}
 %
+\hspace{-3.5mm}
 \begin{tabular*}{1.0\linewidth}{ll}
  Norwegian: & First Language \\
  English: & Fluent
@@ -422,7 +410,7 @@ Extensive experience with Data Analysis, as well as maintaining and developing h
 
 \blankline
 
-\emph{Libraries:} Qt, ROOT, AliRoot, AliAnalysis.
+\emph{Libraries:} Qt, SWING, ROOT, AliRoot, AliAnalysis.
 
 \blankline
 
@@ -450,11 +438,12 @@ and Numerical Analysis.
 
 
 \section{Workshops}      
+%
 
-\textbf{Measurements and sensor operation in harsh and remote environments}
+\textbf{Programming of Multicore Systems}
 \newline
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r} 
-  International Research Training Group (IRTG) & 15-19. Oct. 2012\\
+  International Research Training Group (IRTG) &  9-13. Feb. 2009 \\
   Bergen University College & 
 \end{tabular*}
 
@@ -478,14 +467,14 @@ and Numerical Analysis.
 
 %% \blankline 
 
-\textbf{Programming of Multicore Systems}
-\newline
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r} 
-  International Research Training Group (IRTG) &  9-13. Feb. 2009 \\
-  Bergen University College & 
-\end{tabular*}
+%% \textbf{Measurements and sensor operation in harsh and remote environments}
+%% \newline
+%% \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r} 
+%%   International Research Training Group (IRTG) & 15-19. Oct. 2012\\
+%%   Bergen University College & 
+%% \end{tabular*}
 
-\blankline
+%% \blankline
 
 %% \textbf{ALICE Offline Tutorial}
 %% \newline
@@ -500,14 +489,14 @@ etc...
 \section{Publications}
 %
 
-\begin{outerlist}
-\item[] Neutral pion and $\eta$ meson production in proton–proton collisions at 
-$\sqrt{s}=0.9\ TeV$ and $\sqrt{s}=0.9\ TeV$,\href{http://dx.doi.org/10.1016/j.physletb.2012.09.015}{Physics Letters B}, 2012
-\item[] Production of neutral pions and eta-mesons in pp collisions measured with ALICE, 
-\href{http://dx.doi.org/10.1088/0954-3899/38/12/124076}{Journal of Physics G: Nuclear and Particle Physics}, 2011
-\item[] Master Thesis: Calibration of the ALICE Photon Spectrometer (PHOS) using the $\pi^0 \leftarrow \gamma\gamma$ decay, Universitetet i Bergen, 2009, 
-(\href{http://folk.uio.no/henrikq/docs/master-thesis.pdf}{pdf})
-\end{outerlist}
+%% \begin{outerlist}
+%% \item[] Neutral pion and $\eta$ meson production in proton–proton collisions at 
+%% $\sqrt{s}=0.9\ TeV$ and $\sqrt{s}=0.9\ TeV$,\href{http://dx.doi.org/10.1016/j.physletb.2012.09.015}{Physics Letters B}, 2012
+%% \item[] Production of neutral pions and eta-mesons in pp collisions measured with ALICE, 
+%% \href{http://dx.doi.org/10.1088/0954-3899/38/12/124076}{Journal of Physics G: Nuclear and Particle Physics}, 2011
+%% \item[] Master Thesis: Calibration of the ALICE Photon Spectrometer (PHOS) using the $\pi^0 \leftarrow \gamma\gamma$ decay, Universitetet i Bergen, 2009, 
+%% (\href{http://folk.uio.no/henrikq/docs/master-thesis.pdf}{pdf})
+%% \end{outerlist}
 
 For full list see \href{http://www.cristin.no/as/WebObjects/cristin.woa/wa/fres?sort=ar&la=no&action=sok&pnr=1710}{Cristin.no} 
 (in case of paper copy: \href{http://www.cristin.no/as/WebObjects/cristin.woa/wa/fres?sort=ar&la=no&action=sok&pnr=1710}{http://goo.gl/RFGCkO})
