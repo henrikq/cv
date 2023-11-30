@@ -15,5 +15,11 @@ letter.pdf: letter.tex
 	@pdflatex letter.tex
 	@pdflatex letter.tex
 
+watch:
+	while true; do \
+	  make; \
+	  sleep 1; \
+	done
+
 clean:
 	rm -f *.log *.aux *.out
